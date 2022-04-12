@@ -8,8 +8,6 @@ export default function Node(props) {
     const extraClassName =  isFinish ? 'node-finish' : isStart ? 'node-start' : isWall ? 'node-wall' : ''
     
   return (
-    <div className={`node ${extraClassName}`}
-    >
-    </div>
+    <div id={`node-${row}-${col}`} className={`node ${extraClassName}`}></div>
   )
 }
